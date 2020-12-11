@@ -1,0 +1,35 @@
+n=int(input("Please.Enter the courses number to calculate the GPA : "))
+total_hours=3*n
+sum=0
+for i in range(n):
+    s=input('Enter the course name : ')
+    g=float(input('Enter your grade : '))
+    if(g>=90):
+        p=4*3
+        sum+=p
+    elif(g>=85 and g<90):
+        p=3.7*3
+        sum+=p
+    elif(g>=80 and g<85):
+        p=3.3*3
+        sum+=p
+    elif(g>=75 and g<80):
+        p=3*3
+        sum+=p
+    elif(g>=70 and g<75):
+        p=2.7*3
+        sum+=p
+    elif(g>=65 and g<70):
+        p=3.4*3
+        sum+=p
+    elif(g>=60 and g<65):
+        p=3.7*3
+        sum+=p
+    elif(g>=50 and g<60):
+        p=3.7*3
+        sum+=p
+    else:
+        p=3.7*3
+        sum+=p
+GPA=(sum/total_hours)
+print('The GPA = ',GPA)
